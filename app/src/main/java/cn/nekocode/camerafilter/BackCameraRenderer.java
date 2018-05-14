@@ -192,7 +192,6 @@ public class BackCameraRenderer implements Runnable, TextureView.SurfaceTextureL
         cameraFilterMap.append(R.id.filter5, new LegofiedFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter6, new TileMosaicFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter7, new BlueorangeFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
-        cameraFilterMap.append(R.id.filter8, new ChromaticAberrationFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter9, new BasicDeformFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter10, new ContrastFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter11, new NoiseWarpFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
@@ -202,9 +201,6 @@ public class BackCameraRenderer implements Runnable, TextureView.SurfaceTextureL
         cameraFilterMap.append(R.id.filter15, new LichtensteinEsqueFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter16, new AsciiArtFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
         cameraFilterMap.append(R.id.filter17, new MoneyFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
-        cameraFilterMap.append(R.id.filter18, new CrackedFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
-        cameraFilterMap.append(R.id.filter19, new PolygonizationFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
-        cameraFilterMap.append(R.id.filter20, new JFAVoronoiFilter(context,ROATED_TEXTURE_COORDS,TEXTURE_COORDS));
 
         setSelectedFilter(selectedFilterId);
         // Create texture for camera preview
